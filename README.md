@@ -1,6 +1,5 @@
 # News Feed
-
-![news-feed](https://user-images.githubusercontent.com/7193438/114292279-d58a9100-9a63-11eb-84e2-45606c23b25a.gif)
+![news-feed](https://user-images.githubusercontent.com/7193438/114292532-7f1e5200-9a65-11eb-80d4-330f6b38e115.gif)
 
 This project uses the React Hooks `useReducer` and `useContext` in order to render and manage the state of a simple news feed and its posts.
 
