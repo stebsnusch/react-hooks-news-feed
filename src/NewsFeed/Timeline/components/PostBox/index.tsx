@@ -14,7 +14,7 @@ import {
 	Typography,
 	IconButton,
 } from "@material-ui/core";
-import { Post } from "../../../reducer";
+import { Post } from "../../../types";
 
 const PostBox = (props: { post: Post }) => {
 	const { feedDispatch } = useContext(NewsFeedContext);

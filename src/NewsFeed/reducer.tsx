@@ -1,28 +1,16 @@
-export type Post = {
-	id: number;
-	content: String;
-	favorite: Boolean;
-};
+import { Post, Action, NewsFeedState } from "./types";
 
-type Action = {
-	type: String;
-	post: {
-		id: number;
-		content: String;
-	};
-};
-
-export const initialState: Object = {
+export const initialState: NewsFeedState = {
 	posts: [],
 };
 
-export const postReducer = (state: any, action: Action) => {
+export const postReducer = (state: NewsFeedState, action: Action): any => {
 	switch (action.type) {
 		case "add":
 			return { ...state, posts: [...state.posts, action.post] };
 		case "delete":
 			const newArray = state.posts.filter(
-				(post: any) => post.id !== action.post.id
+				(post: Post) => post.id !== action.post.id
 			);
 			return { ...state, posts: newArray };
 		case "toggleFavorite":

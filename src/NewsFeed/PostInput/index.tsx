@@ -4,25 +4,39 @@ import { Button, TextField, Box } from "@material-ui/core";
 
 const PostInput = () => {
 	const { feedDispatch } = useContext(NewsFeedContext);
-	const inputRef: any = createRef();
+	const inputRef = createRef<HTMLFormElement>();
 
-	const handleSubmit = (e: any) => {
+	const addPost = (e: React.SyntheticEvent): void => {
 		e.preventDefault();
+
+		const target = e.target as typeof e.target & {
+			content: { value: string };
+		};
+
+		if (!target.content.value) return;
+
 		feedDispatch({
 			type: "add",
 			post: {
 				id: Date.now(),
-				content: e.target[0].value,
+				content: target.content.value,
 				favorite: false,
 			},
 		});
-		inputRef.current.reset();
+
+		inputRef.current!.reset();
 	};
 
 	return (
 		<Box my={2}>
-			<form ref={inputRef} onSubmit={(e) => handleSubmit(e)}>
-				<TextField multiline variant="outlined" rows={4} fullWidth />
+			<form ref={inputRef} onSubmit={addPost}>
+				<TextField
+					multiline
+					variant="outlined"
+					name="content"
+					rows={4}
+					fullWidth
+				/>
 				<Box mt={1} display="flex" justifyContent="flex-end">
 					<Button color="primary" type="reset">
 						Reset

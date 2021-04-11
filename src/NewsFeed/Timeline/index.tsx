@@ -1,6 +1,6 @@
 import { useContext } from "react";
+import { Post } from "../types";
 import { NewsFeedContext } from "../newsFeedContext";
-import { Post } from "../reducer";
 import PostBox from "./components/PostBox";
 import { Grid } from "@material-ui/core";
 
