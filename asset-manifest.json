@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-hooks-news-feed/static/css/main.275bd9c7.chunk.css",
-    "main.js": "/react-hooks-news-feed/static/js/main.2c7efcd1.chunk.js",
-    "main.js.map": "/react-hooks-news-feed/static/js/main.2c7efcd1.chunk.js.map",
+    "main.js": "/react-hooks-news-feed/static/js/main.ac3461a2.chunk.js",
+    "main.js.map": "/react-hooks-news-feed/static/js/main.ac3461a2.chunk.js.map",
     "runtime-main.js": "/react-hooks-news-feed/static/js/runtime-main.b268fcd8.js",
     "runtime-main.js.map": "/react-hooks-news-feed/static/js/runtime-main.b268fcd8.js.map",
     "static/js/2.e244e163.chunk.js": "/react-hooks-news-feed/static/js/2.e244e163.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b268fcd8.js",
     "static/js/2.e244e163.chunk.js",
     "static/css/main.275bd9c7.chunk.css",
-    "static/js/main.2c7efcd1.chunk.js"
+    "static/js/main.ac3461a2.chunk.js"
   ]
 }
