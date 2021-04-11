@@ -26,8 +26,11 @@ export const postReducer = (state: any, action: Action) => {
 			);
 			return { ...state, posts: newArray };
 		case "toggleFavorite":
-			let favProp = state.posts[action.post.id].favorite;
-			state.posts[action.post.id].favorite = !favProp;
+			const currentPost = state.posts.filter(
+				(post: Post) => post.id === action.post.id
+			);
+			let favProp = currentPost[0].favorite;
+			currentPost[0].favorite = !favProp;
 			return { ...state };
 		default:
 			return state;

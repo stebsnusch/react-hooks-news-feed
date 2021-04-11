@@ -11,9 +11,11 @@ const Timeline = () => {
 	return (
 		<Grid spacing={2} container direction="column">
 			{feedState.posts.length > 0 &&
-				feedState.posts.map((post: Post, index: number) => (
-					<PostBox key={index} post={post} />
-				))}
+				feedState.posts
+					.sort((b: Post, a: Post) => b.id - a.id)
+					.map((post: Post, index: number) => (
+						<PostBox key={index} post={post} />
+					))}
 		</Grid>
 	);
 };
