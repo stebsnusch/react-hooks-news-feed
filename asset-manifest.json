@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-hooks-news-feed/static/css/main.275bd9c7.chunk.css",
-    "main.js": "/react-hooks-news-feed/static/js/main.ac3461a2.chunk.js",
-    "main.js.map": "/react-hooks-news-feed/static/js/main.ac3461a2.chunk.js.map",
-    "runtime-main.js": "/react-hooks-news-feed/static/js/runtime-main.b268fcd8.js",
-    "runtime-main.js.map": "/react-hooks-news-feed/static/js/runtime-main.b268fcd8.js.map",
-    "static/js/2.e244e163.chunk.js": "/react-hooks-news-feed/static/js/2.e244e163.chunk.js",
-    "static/js/2.e244e163.chunk.js.map": "/react-hooks-news-feed/static/js/2.e244e163.chunk.js.map",
-    "static/js/3.b1ffc185.chunk.js": "/react-hooks-news-feed/static/js/3.b1ffc185.chunk.js",
-    "static/js/3.b1ffc185.chunk.js.map": "/react-hooks-news-feed/static/js/3.b1ffc185.chunk.js.map",
+    "main.css": "/react-hooks-news-feed/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/react-hooks-news-feed/static/js/main.e8a1224a.chunk.js",
+    "main.js.map": "/react-hooks-news-feed/static/js/main.e8a1224a.chunk.js.map",
+    "runtime-main.js": "/react-hooks-news-feed/static/js/runtime-main.21aa08d6.js",
+    "runtime-main.js.map": "/react-hooks-news-feed/static/js/runtime-main.21aa08d6.js.map",
+    "static/js/2.dcac25b9.chunk.js": "/react-hooks-news-feed/static/js/2.dcac25b9.chunk.js",
+    "static/js/2.dcac25b9.chunk.js.map": "/react-hooks-news-feed/static/js/2.dcac25b9.chunk.js.map",
+    "static/js/3.02f09a89.chunk.js": "/react-hooks-news-feed/static/js/3.02f09a89.chunk.js",
+    "static/js/3.02f09a89.chunk.js.map": "/react-hooks-news-feed/static/js/3.02f09a89.chunk.js.map",
     "index.html": "/react-hooks-news-feed/index.html",
-    "static/css/main.275bd9c7.chunk.css.map": "/react-hooks-news-feed/static/css/main.275bd9c7.chunk.css.map",
-    "static/js/2.e244e163.chunk.js.LICENSE.txt": "/react-hooks-news-feed/static/js/2.e244e163.chunk.js.LICENSE.txt"
+    "static/css/main.6dea0f05.chunk.css.map": "/react-hooks-news-feed/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.dcac25b9.chunk.js.LICENSE.txt": "/react-hooks-news-feed/static/js/2.dcac25b9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b268fcd8.js",
-    "static/js/2.e244e163.chunk.js",
-    "static/css/main.275bd9c7.chunk.css",
-    "static/js/main.ac3461a2.chunk.js"
+    "static/js/runtime-main.21aa08d6.js",
+    "static/js/2.dcac25b9.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.e8a1224a.chunk.js"
   ]
 }
