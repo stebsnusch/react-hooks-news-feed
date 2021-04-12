@@ -1,3 +1,5 @@
+import { Dispatch } from "react";
+
 export type Post = {
 	id: number;
 	content: String;
@@ -6,12 +8,14 @@ export type Post = {
 
 export type Action = {
 	type: String;
-	post: {
-		id: number;
-		content: String;
-	};
+	post: Post;
 };
 
 export type NewsFeedState = {
 	posts: Array<Post>,
+}
+
+export type ContextType = {
+	feedState: NewsFeedState,
+	feedDispatch: Dispatch<Action>,
 }

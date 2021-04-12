@@ -1,7 +1,9 @@
+import { Box, Container, Link, Typography } from "@material-ui/core";
+
 import PostInput from "./PostInput";
 import Timeline from "./Timeline";
 import { NewsFeedProvider } from "./newsFeedContext";
-import { Box, Container, Link, Typography } from "@material-ui/core";
+import { GITHUB_URL } from "./constants";
 
 const NewsFeed = () => (
 	<Container maxWidth="sm">
@@ -28,7 +30,7 @@ const NewsFeed = () => (
 				gutterBottom
 			>
 				Visit my{" "}
-				<Link href="https://github.com/stebsnusch" target="_blank">
+				<Link href={GITHUB_URL} target="_blank">
 					Github
 				</Link>{" "}
 				for more projects.

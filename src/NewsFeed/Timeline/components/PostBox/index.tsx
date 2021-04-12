@@ -22,7 +22,9 @@ const PostBox = (props: { post: Post }) => {
 
 	const deleteAction = (
 		<IconButton
-			onClick={() => feedDispatch({ type: "delete", post: props.post })}
+			onClick={() =>
+				feedDispatch && feedDispatch({ type: "delete", post: props.post })
+			}
 		>
 			<DeleteIcon />
 		</IconButton>
@@ -39,6 +41,7 @@ const PostBox = (props: { post: Post }) => {
 				<CardActions>
 					<IconButton
 						onClick={() =>
+							feedDispatch &&
 							feedDispatch({ type: "toggleFavorite", post: props.post })
 						}
 					>

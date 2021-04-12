@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { Post } from "../types";
 import { NewsFeedContext } from "../newsFeedContext";
 import PostBox from "./components/PostBox";
 import { Grid } from "@material-ui/core";
@@ -9,12 +8,11 @@ const Timeline = () => {
 
 	return (
 		<Grid spacing={2} container direction="column">
-			{feedState.posts.length > 0 &&
+			{feedState &&
+				feedState.posts.length > 0 &&
 				feedState.posts
-					.sort((a: Post, b: Post) => b.id - a.id)
-					.map((post: Post, index: number) => (
-						<PostBox key={index} post={post} />
-					))}
+					.sort((a, b) => b.id - a.id)
+					.map((post, index) => <PostBox key={index} post={post} />)}
 		</Grid>
 	);
 };

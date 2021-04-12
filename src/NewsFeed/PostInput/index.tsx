@@ -15,14 +15,15 @@ const PostInput = () => {
 
 		if (!target.content.value) return;
 
-		feedDispatch({
-			type: "add",
-			post: {
-				id: Date.now(),
-				content: target.content.value,
-				favorite: false,
-			},
-		});
+		feedDispatch &&
+			feedDispatch({
+				type: "add",
+				post: {
+					id: Date.now(),
+					content: target.content.value,
+					favorite: false,
+				},
+			});
 
 		inputRef.current!.reset();
 	};

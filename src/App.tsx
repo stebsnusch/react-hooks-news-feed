@@ -1,4 +1,3 @@
-import "./App.css";
 import NewsFeed from "./NewsFeed";
 
 function App() {
