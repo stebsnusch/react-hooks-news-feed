@@ -7,7 +7,7 @@ This project uses the React Hooks `useReducer` and `useContext` in order to rend
 
 - [x] Order by latest post
 - [ ] Write unit tests
-- [ ] Error handling and validation
+- [x] Error handling and validation
 - [ ] Add post data (author, avatar, time)
 - [ ] Add comments
 
